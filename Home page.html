@@ -3,13 +3,13 @@
 <head>
     <style>
         table {
-            font-family: arial, sans-serif;
+            font-family: Calibri, Helvetica, sans-serif;
             border-collapse: collapse;
             width: 100%;
         }
 
         td, th {
-            border: 1px solid #dddddd;
+            border: 1px solid black;
             text-align: left;
             padding: 8px;
         }
@@ -17,48 +17,65 @@
         tr:nth-child(even) {
             background-color: #dddddd;
         }
+        .btn {
+            background-color: black;
+            color: white;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            width: 100%;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 17px;
+        }
     </style>
 </head>
 <body>
 
-    <h2>Welcome User!</h2><br>
-    <h2>Please select a car that you want:</h2>
+    <center><h2>Welcome User!</h2><br></center>
+    <center><h2>Please select a car that you want:</h2></center>
     <table>
         <tr>
             <th>Number</th>
             <th>License</th>
             <th>Make Model</th>
             <th>Price/hour</th>
+            <th>Rent!</th>
         </tr>
         <tr>
             <td>1)</td>
             <td>ABC 123</td>
             <td>Volkswagen Beetle</td>
             <td>12 pounds</td>
+            <td><button class="btn" onclick="document.location='TransactionPage.html'">Complete Rent</button></td>
         </tr>
         <tr>
             <td>2)</td>
             <td>HKT 432</td>
             <td>Lamborghini Aventador</td>
             <td>120 pounds</td>
+            <td><button class="btn" onclick="document.location='TransactionPage.html'">Complete Rent</button></td>
         </tr>
         <tr>
             <td>3)</td>
             <td>YKO 190</td>
             <td>SSC Tuatara</td>
             <td>500 pounds</td>
+            <td><button class="btn" onclick="document.location='TransactionPage.html'">Complete Rent</button></td>
         </tr>
         <tr>
             <td>4)</td>
             <td>TKO 420</td>
             <td>Bugatti Veyron</td>
             <td>1000 pounds</td>
+            <td><button class="btn" onclick="document.location='TransactionPage.html'">Complete Rent</button></td>
         </tr>
         <tr>
             <td>5)</td>
             <td>XYZ 694</td>
             <td>Tesla Model S</td>
             <td>2 pounds</td>
+            <td><button class="btn" onclick="document.location='TransactionPage.html'">Complete Rent</button></td>
         </tr>
     </table>
 

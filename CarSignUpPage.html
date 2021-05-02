@@ -1,31 +1,145 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-    <meta charset="utf-8" />
-    <title>CarBnB </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Calibri, Helvetica, sans-serif;
+            font-size: 17px;
+            padding: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            margin: 0 -16px;
+        }
+
+        .col-25 {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+        }
+
+        .col-50 {
+            -ms-flex: 50%; /* IE10 */
+            flex: 50%;
+        }
+
+        .col-75 {
+            -ms-flex: 75%; /* IE10 */
+            flex: 75%;
+        }
+
+        .col-25,
+        .col-50,
+        .col-75 {
+            padding: 0 16px;
+        }
+
+        .container {
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+        }
+
+        input[type=text] {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .icon-container {
+            margin-bottom: 20px;
+            padding: 7px 0;
+            font-size: 24px;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            width: 100%;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        a {
+            color: #2196F3;
+        }
+
+        hr {
+            border: 1px solid lightgrey;
+        }
+
+        span.price {
+            float: right;
+            color: grey;
+        }
+
+
+        @media (max-width: 800px) {
+            .row {
+                flex-direction: column-reverse;
+            }
+
+            .col-25 {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>CarBnB car sign up page</h1>
-    <h2>Please sign up car</h2>
+    <center><h2> Welcome to CarBnB!</h2></center>
+    <center><h3> Please enter your car information below</h3></center>
+    <div class="row">
+        <div class="col-75">
+            <form action="Home page.html" method="post">
+                <div class="container">
 
-    <form action="/action_page.php">
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Account information</h3>
+                            <label for="license_plate"> License Plate</label>
+                            <input type="text" id="lp" name="lp" placeholder="License plate" required>
+                            <label for="make"> Car Make</label>
+                            <input type="text" id="make" name="make" placeholder="Car make" required>
+                            <label for="model"> Model</label>
+                            <input type="text" id="model" name="model" placeholder="Model" required>
+                            <label for="carid"> Car License</label>
+                            <input type="text" id="carid" name="carid" placeholder="Car License" required>
+                            <label for="carloc"> Car Location</label>
+                            <input type="text" id="carloc" name="carloc" placeholder="Car Location" required>
 
-        <label for="license_plate">License Plate:</label>
-        <input type="text" id="License Plate" name="license_plate"><br><br>
-        <label for="make">Make:</label>
-        <input type="text" id="make" name="make"><br><br>
-        <label for="model">Model:</label>
-        <input type="text" id="make" name="make"><br><br>
-        <label for="car_license">Car lisence ID:</label>
-        <input type="text" id="car_lisence" name="car_lisence"><br><br>
-        <label for="car_location">Car Location:</label>
-        <input type="text" id="car_location" name="car_location"><br><br>
-        
+                        </div>
 
-        <input type="submit" value="Submit"><br>
-    </form>
+                    </div>
 
+                    <button class="btn">Sign in</button>
+                    Want to register as a user? <a href="CarBnB.html">Click here</a>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
 
 </body>
 </html>

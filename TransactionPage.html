@@ -94,7 +94,7 @@
             color: grey;
         }
 
-
+        
         @media (max-width: 800px) {
             .row {
                 flex-direction: column-reverse;
@@ -107,55 +107,58 @@
     </style>
 </head>
 <body>
-    <center><h2> Welcome to CarBnB!</h2></center>
-    <center><h3> Please enter your account information below</h3></center>
+    <center><h2> Please fill out the corresponding fields</h2></center>
     <div class="row">
         <div class="col-75">
-            <form action="Home page.html" method="post">
+            <form action="Thankyoupage.html" method="post">
                 <div class="container">
 
 
 
                     <div class="row">
                         <div class="col-50">
-                            <h3>Account information</h3>
-                            <label for="Username"> Username</label>
-                            <input type="text" id="username" name="Username" placeholder="Username" required>
-                            <label for="password"> Password</label>
-                            <input type="text" id="password" name="Password" placeholder="Password" required>
-                            <label for="cpswd"> Confirm Password</label>
-                            <input type="text" id="cpswd" name="confirmpassword" placeholder="Password" required>
-                            <label for="age"> Age</label>
-                            <input type="text" id="age" name="age" placeholder="Enter age" required>
-
+                            <h3>Billing Address</h3>
+                            <label for="fname"> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
+                            <label for="email"> Email</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com" required>
+                            <label for="adr"> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="Fifth Settlement" required>
+                            <label for="city"> City</label>
+                            <input type="text" id="city" name="city" placeholder="Cairo" required>
 
 
                         </div>
 
                         <div class="col-50">
-                            <h3>Identification</h3>
-                            <label for="cname">Drivers lisence ID</label>
-                            <input type="text" id="dID" name="driverslisence" placeholder="012345678912345" required>
-                            <label for="natID">National ID</label>
-                            <input type="text" id="natID" name="natID" placeholder="012345678912345" required>
-                            <label for="phonenum">Phone number</label>
-                            <input type="text" id="phonenum" name="phonenum" placeholder="01027939336" required>
-
-                            <div class="row no-gutters">
-                                <input type="radio" id="customer" name="usertype" value="customer" required>
-                                <label for="customer">Customer</label>
-                                <input type="radio" id="carowner" name="usertype" value="carowner" required>
-                                <label for="carowner">Car Owner</label>
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Cards</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
                             </div>
-
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2018" required>
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352" required>
+                                </div>
+                            </div>
                         </div>
-
 
                     </div>
 
-                    <button class="btn">Sign in</button>
-                    Already have an account? <a href="Log in page.html">click here</a>
-                    Want to register a car? <a href="CarSignUpPage.html">Click here</a>
+                    <button class="btn">Complete Rent</button>
+
 
                 </div>
             </form>
